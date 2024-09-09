@@ -40,7 +40,7 @@ public class Session extends BaseTest{
         login = response.path("login");
     }
 
-    @Test(dependsOnMethods = {"Tests.Session.createSession","Tests.Users.getUser","Tests.Quotes.markQuoteFavourite","Tests.Quotes.unmarkQuoteFavourite","Tests.Quotes.hideQuote","Tests.Quotes.unhideQuote","Tests.Activity.getActivityUserToken","Tests.Activity.getActivityQueryParam","Tests.Activity.deleteActivity","Tests.Activity.followActivity","Tests.Activity.unfollowActivity"})
+    @Test(dependsOnMethods = {"Tests.Session.createSession","Tests.Users.getUser","Tests.Quotes.markQuoteFavourite","Tests.Quotes.unmarkQuoteFavourite","Tests.Quotes.hideQuote","Tests.Quotes.unhideQuote","Tests.Activity.getActivityUserToken","Tests.Activity.deleteActivity","Tests.Activity.followActivity","Tests.Activity.unfollowActivity"})
     public void deleteSession() {
         RestAssured.baseURI = baseUri;
         String filePath = new File(headersFilePath).getAbsolutePath();
