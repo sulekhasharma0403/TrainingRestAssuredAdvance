@@ -7,7 +7,11 @@
     <test name="APIAutomationTest">
         <classes>
             <class name="Tests.BaseTest" />
-            <class name="Tests.GetQuoteOfTheDay" />
-        </classes>
-    </test>
+            <class name="Tests.Quotes" />
+            <class name="Tests.Session" />
+            <class name="Tests.Users" />
+            <class name="Tests.Activity" />
+            <class name="Tests.Typeahead" />
+       </classes>
+   </test>
 </suite>
