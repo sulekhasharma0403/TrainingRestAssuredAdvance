@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="TrelloAPITestSuite" verbose="1">
+<suite name="FavQAPITestSuite" verbose="1">
     <listeners>
         <listener class-name="Listeners.Log4jListener"></listener>
         <listener class-name="Listeners.ExtentReportListener"></listener>

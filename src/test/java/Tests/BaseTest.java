@@ -15,6 +15,8 @@ public class BaseTest {
     protected String newUserLogin;
     protected String newUserEmail;
     protected String newUserPassword;
+    protected String tag;
+    protected String author;
     protected static String userToken;
     protected static String login;
     protected static int quoteId;
@@ -35,6 +37,8 @@ public class BaseTest {
             FileInputStream filePathInput = new FileInputStream("src/test/resources/testData/filePath.properties");
             filePathProp.load(filePathInput);
             headersFilePath = filePathProp.getProperty("headersFilePath");
+            tag = filePathProp.getProperty("queryParamTypeTag");
+            author = filePathProp.getProperty("queryParamTypeAuthor");
             FileInputStream newUserDetails = new FileInputStream("src/test/resources/testData/newUserDetails.properties");
             newUserProp.load(newUserDetails);
             newUserLogin = newUserProp.getProperty("newUserLogin");
